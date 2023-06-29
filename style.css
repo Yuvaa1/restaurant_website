@@ -1,13 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-image: url("images/background.jpg"); 
+  background-size: cover;
+  background-position: center;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 20px;
 }
 
@@ -18,8 +19,12 @@ nav {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
+   background-image: linear-gradient(to right,gold, white); /* Use a linear gradient for a two-color combination */
+  -webkit-background-clip: text; /* Apply the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  display: inline-block;
 }
 
 ul {
@@ -43,9 +48,6 @@ li a:hover {
 }
 
 section.hero {
-  background-image: url("images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -68,7 +70,7 @@ p {
 
 .btn {
   display: inline-block;
-  background-color: #333;
+  background-color: green;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -83,6 +85,7 @@ section.featured-dishes {
 h2 {
   font-size: 24px;
   margin-bottom: 40px;
+  color: #fff; /* Set "Featured Dishes" text color to white */
 }
 
 .dish {
@@ -92,16 +95,32 @@ h2 {
 .dish img {
   width: 100%;
   height: auto;
+  max-width: 400px; /* Increase the maximum width of the dish images */
   margin-bottom: 10px;
 }
 
 .dish h3 {
   font-size: 20px;
   margin-bottom: 10px;
+  color:#ffa500 ; /* Set dish title text color to white */
+}
+
+.dish p {
+  font-size: 16px; /* Adjust the font size for the dish description */
+  color: #fff; /* Set dish description text color to white */
+}
+.dish .price {
+  color: red; /* Set the price text color to red */
+  font-weight: bold; /* Make the price text bold */
+  margin-top: 10px; /* Add margin to separate it from the dish description */
+}
+
+.dish .price-value {
+  display: inline-block; /* Display the price on the next line */
 }
 
 footer {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5); /* Add transparency to the footer background */
   color: #fff;
   padding: 10px;
   text-align: center;
